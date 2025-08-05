@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>隐私政策</title>
+    <style>
+        /* 基础样式 */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9fafc;
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* 主要内容容器 */
+        .policy-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        /* 主要内容区域 */
+        .policy-main {
+            flex: 1;
+            padding: 20px;
+        }
+
+        /* 头部信息 */
+        .policy-header {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .policy-title {
+            display: block;
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+
+        .policy-update {
+            font-size: 16px;
+            color: #7f8c8d;
+        }
+
+        /* 内容区域 */
+        .policy-content {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            max-height: calc(100vh - 250px);
+            overflow-y: auto;
+        }
+
+        .section {
+            margin-bottom: 25px;
+        }
+
+        .section-title {
+            display: block;
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: #34495e;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        .section-title::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 4px;
+            height: 20px;
+            background-color: #007aff;
+            border-radius: 2px;
+        }
+
+        .section-content {
+            display: block;
+            font-size: 16px;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .divider {
+            height: 1px;
+            background-color: #eee;
+            margin: 30px 0;
+        }
+
+        /* 页脚 */
+        .policy-footer {
+            padding: 15px;
+            text-align: center;
+            background-color: #ffffff;
+            border-top: 1px solid #eee;
+            font-size: 14px;
+            color: #7f8c8d;
+        }
+
+        .footer-link {
+            color: #007aff;
+            margin-left: 15px;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        /* PC端适配 */
+        @media (min-width: 768px) {
+            .policy-main {
+                padding: 40px;
+            }
+            
+            .policy-content {
+                padding: 40px;
+            }
+            
+            .policy-title {
+                font-size: 36px;
+            }
+            
+            .section-title {
+                font-size: 24px;
+            }
+            
+            .section-content {
+                font-size: 18px;
+            }
+        }
+
+        /* 平板适配 */
+        @media (min-width: 576px) and (max-width: 767px) {
+            .policy-main {
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="policy-container">
+        <!-- 主要内容区域 -->
+        <div class="policy-main">
+            <!-- 头部信息 -->
+            <div class="policy-header">
+                <span class="policy-title">隐私政策</span>
+                <span class="policy-update">最后更新日期: 2025年8月1日</span>
+            </div>
+            
+            <!-- 政策内容滚动区域 -->
+            <div class="policy-content">
+                <div class="section">
+                    <span class="section-title">1. 信息收集</span>
+                    <span class="section-content">开发者不会从此 App 中收集任何数据。</span>
+                </div>
+                
+                <div class="section">
+                    <span class="section-title">2. 信息共享</span>
+                    <span class="section-content">我们不会出售您的个人信息。</span>
+                </div>
+                
+                <div class="section">
+                    <span class="section-title">3. 数据安全</span>
+                    <span class="section-content">我们采取合理的安全措施保护您的个人信息，包括加密技术、访问控制和安全协议。</span>
+                </div>
+                
+                <div class="section">
+                    <span class="section-title">4. 您的权利</span>
+                    <span class="section-content">您有权访问、更正或删除我们持有的关于您的个人信息。</span>
+                </div>
+                
+                <!-- 额外美化元素 -->
+                <div class="divider"></div>
+            </div>
+        </div>
+        
+        <!-- 页脚 -->
+        <div class="policy-footer">
+            <span>© 2025 zhuangzhuang.li 版权所有</span>
+            <span onclick="navigateToContact()" class="footer-link">联系我们</span>
+        </div>
+    </div>
+
+    <script>
+        // 导航到联系我们页面
+        function navigateToContact() {
+            window.location.href = '/index.html'; // 修改为您的联系页面路径
+        }
+
+        // 模拟同意按钮功能
+        function handleAgree() {
+            alert('感谢您的同意');
+            setTimeout(() => {
+                window.history.back();
+            }, 1500);
+        }
+    </script>
+</body>
+</html>
